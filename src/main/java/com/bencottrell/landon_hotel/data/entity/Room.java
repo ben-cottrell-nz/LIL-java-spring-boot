@@ -1,0 +1,22 @@
+package com.bencottrell.landon_hotel.data.entity;
+
+import jakarta.persistence.*;
+import lombok.Data;
+import lombok.ToString;
+
+@Entity
+@Table(name="rooms")
+@Data
+@ToString
+public class Room {
+    @Id
+    @Column(name="room_id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
+    @Column(name="first_name")
+    private String name;
+    @Column(name="room_number")
+    private String roomNumber;
+    @Column(name="bed_info")
+    private String bedInfo;
+}
