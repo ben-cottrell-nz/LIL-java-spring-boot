@@ -5,18 +5,18 @@ import lombok.Data;
 import lombok.ToString;
 
 @Entity
-@Table(name="rooms")
+@Table(name="ROOMS")
 @Data
 @ToString
 public class Room {
     @Id
-    @Column(name="room_id")
+    @Column(name="ROOM_ID")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    @Column(name="first_name")
+    @Column(name="NAME")
     private String name;
-    @Column(name="room_number")
+    @Column(name="ROOM_NUMBER")
     private String roomNumber;
-    @Column(name="bed_info")
+    @Column(name="BED_INFO")
     private String bedInfo;
 }
